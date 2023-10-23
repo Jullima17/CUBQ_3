@@ -1,0 +1,1272 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #333;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .scroll::-webkit-scrollbar{
+    width: 7px;
+    height: 100px;
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: none;
+  }
+
+  .scroll {
+    width: 100%;
+    height: 100vh;   
+    overflow-y: scroll;
+    margin-left: 0px;
+  }
+
+  .box {
+    width: 100%;
+    height: 50px;
+    border-radius: none;
+  }
+   
+  @import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,900);
+    
+  @font-face {
+      font-family: 'Pragmatica ExtraLight';
+      src: url('./assets/Pragmatica-ExtraLight.woff');
+      }
+          
+  a {
+    text-decoration: none !important;
+    font-weight: 900;
+    color: #fff !important;
+  }
+
+  /*header */
+
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    transition: all .3s;
+    background-color: #333333ba;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header.active {
+    height: 100vh;
+  }
+
+  .header h1 {
+    text-align: center;
+    cursor: pointer;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+    transition: all .3s;
+    font-weight: 900;
+  }
+
+  .header h1:hover {
+    margin-left: 0;
+    filter: drop-shadow(0.25em 0.25em 0.025em rgba(0, 0, 0, 0.239));
+  }
+
+  #menu.button {
+    margin-top: -0.3%;
+    margin-left: 4%;
+    position: fixed;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 999;
+    color: #ffffff;
+  }
+
+  #menu.button.active {
+    color: white;
+    width: 50px;
+    height: 50px;
+  }
+  
+  body {
+    background-color: #333;
+  }
+  
+  a {
+    text-decoration: none !important;
+    font-weight: 900;
+    color: #fff !important;
+  }
+  
+  .title-effect {
+    font-size: 50px;
+  }
+  
+  h3 span {
+    overflow: hidden;
+    vertical-align: top;
+  
+    display: inline-block;
+  }
+  
+  h3 span .element-ani {
+    animation: moveText 0.8s ease;
+  }
+  
+  /*/effects*/
+
+  .containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .second-container {
+    position: relative;
+    width: 100%;
+    height: 100vh !important;
+  }
+  
+  .second-containerr {
+    position: relative;
+    width: 100%;
+    height: 53vh !important;
+  }
+  
+  .container-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .title-parag {
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    display: flex;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+    width: 50%;
+  }
+  
+  .title-video {
+    padding: 0 60px;
+    text-align: left;
+    font-size: 50px;
+  }
+  
+  .composition-para {
+    padding: 0 60px;
+    margin-left: 80px;
+  }
+  
+  .container-text {
+    width: 65%;
+    margin: 0 auto;
+  }
+  
+  .container-text-2 {
+    width: 105%;
+    margin: 0 auto;
+  }
+  
+  .content-one {
+    text-align: left;
+    width: 65%;
+    margin: 0 auto;
+  }
+  
+  .cube {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+  }
+  
+  .cube {
+    left: 5%;
+    top: 19%;
+    position: absolute;
+  }
+  
+  .cube-2 {
+    right: 5%;
+    bottom: 10%;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+  }
+  
+  .face {
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    opacity: 0.9;
+  }
+  
+  .front {
+    transform: rotateX(45deg) rotateY(45deg) translateZ(100px);
+  }
+  
+  .back {
+    transform: rotateX(45deg) rotateY(45deg) translateZ(-100px);
+  }
+  
+  .right {
+    transform: rotateX(45deg) rotateY(45deg) rotateY(-90deg) translateZ(100px);
+  }
+  
+  .left {
+    transform: rotateX(45deg) rotateY(45deg) rotateY(90deg) translateZ(100px);
+  }
+  
+  .top {
+    transform: rotateX(45deg) rotateY(45deg) rotateX(-90deg) translateZ(100px);
+  }
+  
+  .bottom {
+    transform: rotateX(45deg) rotateY(45deg) rotateX(90deg) translateZ(100px);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(45deg) rotateY(45deg);
+    }
+  
+    100% {
+      transform: rotateX(45deg) rotateY(45deg) rotate(360deg);
+    }
+  }
+  
+  @media(max-width: 320px) {
+  
+    .number {
+      padding: 0;
+      color: white;
+      font-size: 3em !important;
+      font-weight: 900;
+      margin-right: -18px!important;
+      margin-top: -15px!important;
+      position: absolute;
+    }
+  
+    #menu {
+      left: -30px!important;
+      top: 0px!important;
+      position: fixed;
+    }
+  
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .content {
+      height: 30vh!important;
+      margin-top: 250px!important;
+      margin-left: -7vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%!important;
+    }
+  
+    .content-faixa {
+      margin-top: 63vw !important;
+      background-color: #20231a;
+      height: 180vw!important;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #internal {
+      padding: 0 12px;
+    }
+  
+    #video-3 {
+      height: 180px !important;
+    }
+  
+    .part-two {
+      background-image: url('https://cdn.1000things.at/app/uploads/the-chapel-To-Do-1344x756.jpg');
+      background-size: cover;
+      /* Ajuste para cobrir toda a tela */
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+    }
+  
+    .title2 {
+      text-align: left !important;
+      font-size: 29px!important;
+      line-height: 38px;
+      margin-left: 24px!important;
+      position: relative;
+      color: white;
+    }
+  
+    .para-2 {
+      font-size: 15px !important;
+      letter-spacing: .5px;
+      color: white;
+      width: 80% !important;
+      left: 15px!important;
+      position: relative;
+    }
+  
+    .txt_p2_1 {
+      width: 74%!important;
+    }
+
+    .end {
+      margin-top: -30px !important;
+    }
+  
+    .footer-page {
+      height: 60px;
+      display: flex;
+      justify-content: center !important;
+      margin-right: 0% !important;
+      margin-top: 46vw!important;
+    }
+  
+    .logos {
+      margin: 0 10px;
+      height: 25px !important;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 20px !important;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 20px !important;
+    }
+  }
+  
+  @media(max-width: 390px) and (min-width: 321px) {
+  
+    .number {
+      padding: 0;
+      color: white;
+      font-size: 3em !important;
+      font-weight: 900;
+      position: absolute;
+      right: 0px !important;
+      top: -5px !important;
+    }
+  
+    #menu {
+      left: -35px!important;
+      position: fixed;
+    }
+  
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .content {
+      height: 30vh!important;
+      margin-top: 70vw!important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 93% !important;
+      margin-left:-6vw;
+    }
+  
+    .content-faixa {
+      margin-top: 150px !important;
+      background-color: #20231a;
+      height: 165vw!important;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #internal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    #video-3 {
+      height: 200px !important;
+      top: 0vw;
+      position: relative;
+    }
+  
+    .part-two {
+      background-image: url('https://cdn.1000things.at/app/uploads/the-chapel-To-Do-1344x756.jpg');
+      background-size: cover;
+      /* Ajuste para cobrir toda a tela */
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+    }
+
+    .title2 {
+      text-align: left !important;
+      width: 75%;
+      font-size: 38px!important;
+      line-height: 50px!important;
+      color: white;
+      width: 90%!important;
+      left: -3vw;
+      position: relative;
+    }
+  
+    .txt_p2_1{
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 15px;
+      font-weight: 100;
+      letter-spacing: 1.7px;
+      line-height: 35px;
+      margin-left: 3vw!important;
+    }
+
+    .para-2 {
+      font-size: 15px;
+      letter-spacing: .5px;
+      color: white;
+      width: 79% !important;
+    }
+  
+    .footer-page {
+      height: 80px!important;
+      display: flex;
+      justify-content: center !important;
+      margin-right: 0% !important;
+      top: 56vw !important;
+    }
+  
+    .end {
+      margin-top: 130vw !important;
+    }
+
+    .logos {
+      margin: 0 10px;
+      height: 25px !important;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 20px !important;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 20px !important;
+    } 
+  }
+  
+  @media(max-width: 540px) and (min-width: 391px) {
+  
+    .number {
+      padding: 0;
+      color: white;
+      font-size: 7em !important;
+      font-weight: 900;
+      float: right;
+      top: -1vw!important;
+    }
+  
+    #menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 999;
+      color: #ffffff;
+      position: fixed;
+      left: -6vw!important;
+      top: 2vw!important;
+    }
+  
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .content {
+      height: 30vh!important;
+      margin-top: 50vw!important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .content-faixa {
+      margin-top: 30vw !important;
+      background-color: #20231a;
+      height: 154vw!important;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #internal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    #video-3 {
+      height: 250px;
+    }
+  
+    .part-two {
+      background-image: url('https://cdn.1000things.at/app/uploads/the-chapel-To-Do-1344x756.jpg');
+      background-size: cover;
+      /* Ajuste para cobrir toda a tela */
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+    }
+  
+    .title2 {
+      font-size: 38px!important;
+      line-height: 50px!important;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-left: 4vw!important;
+      margin-top: 5vw;
+      width: 100%;
+  }
+  
+    .para-2 {
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: white;
+      width: 85% !important;
+    }
+  
+    .footer-page {
+      height: 60px;
+      display: flex;
+      justify-content: center !important;
+      margin-right: 0% !important;
+      margin-top: 3vw;
+    }
+
+    .end {
+      margin-top: 0vw!important;
+    }
+  
+    .logos {
+      margin: 0 10px;
+      height: 25px !important;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 20px !important;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 20px !important;
+    }
+  }
+  
+  @media(max-width: 768px) {
+  
+    .number {
+      padding: 0;
+      color: white;
+      font-size: 8em !important;
+      font-weight: 900;
+      position: absolute;
+      right: 15px;
+      top: 5px;
+    }
+  
+    #menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 999;
+      color: #ffffff;
+      position: fixed;
+      left: -2vw;
+      top: 2vw;
+    }
+  
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .content {
+      height: 35vh!important;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .content-faixa {
+      margin-top: 25px;
+      background-color: #20231a;
+      height: 65vw;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      top: 6vw;
+      position: relative;
+    }
+  
+    #internal {
+      width: 75%;
+      padding: 0 12px;
+    }
+  
+    #video-3 {
+      height: 250px;
+    }
+  
+    .title2 {
+      font-size: 35px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-left: 9.5vw;
+      margin-top: 5vw;
+      width: 90%!important;
+      line-height: 50px;
+    }
+  
+    .txt_p2_1 {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 1.7px;
+      line-height: 35px;
+      margin-left: 3vw;
+    }
+
+    .para-2 {
+      letter-spacing: 1px;
+      color: white;
+      width: 50%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px ;
+      font-weight: 100;
+      line-height: 2.3em;
+      margin-left: 8vw;
+      margin-top: 2vw;
+    }
+
+    .end { 
+      margin-top: 4vw!important;
+    }
+    
+    .footer-page {
+      height: 60px;
+      display: flex;
+      justify-content: end;
+      margin-right: 3.2%;
+      top: 27vw;
+      position: relative;
+    }
+  
+    .logos {
+      margin: 0 10px;
+      height: 40px;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 35px;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 35px;
+    }
+  }
+  
+  @media(max-width: 884px) and (min-width: 769px) {
+    
+    .number {
+      padding: 0;
+      color: white;
+      font-size: 9em !important;
+      font-weight: 900;
+      right: 50px;
+      top: 5px;
+      position: absolute;
+    }
+  
+    #menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 999;
+      color: #ffffff;
+      position: fixed;
+    }
+ 
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .content {
+      height: 30vh!important;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .content-faixa {
+      background-color: #20231a;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 36vw!important;
+    }
+  
+    #internal {
+      width: 45%;
+      padding: 0 12px;
+    }
+  
+    #video-3 {
+      height: 250px;
+    }
+  
+    .title2 {
+      text-align: left;
+      font-size: 60px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-left: 5.5vw;
+      margin-top: 5vw;
+      width: 88%;
+      }
+  
+    .para-2 {
+      letter-spacing: .5px;
+      color: white;
+      width: 50%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      line-height: 2.3em;
+      margin-left: 7vw;
+      top: 5vw;
+      position: relative;
+    }
+  
+    .txt_p2_1{
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 1.7px;
+      line-height: 35px;
+      margin-left: 3vw;
+    }
+
+    .footer-page {
+      height: 60px;
+      display: flex;
+      justify-content: end;
+      margin-right: 3.2%;
+      bottom: -7vw;
+      position: relative;
+    }
+  
+    .logos {
+      margin: 0 10px;
+      height: 40px;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 35px;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 35px;
+    }
+  }
+  
+  @media(max-width: 1280px) and (min-width: 884px) {
+    
+    .number {
+      padding: 0;
+      color: white;
+      font-size: 10em!important;
+      font-weight: 900;
+      margin-right: 0px;
+      margin-top: 0px;
+      position: absolute;
+      right: 20px;
+      top: 5px;
+    }
+  
+    #menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 999;
+      color: #ffffff;
+      position: fixed;
+      left: 0px;
+    }
+
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .content {
+      height: 61vw!important;
+      margin-top: 15vw!important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .content-faixa {
+      background-color: #20231a;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20vw;
+    }
+  
+    #internal {
+      width: 30%;
+      padding: 0 10px;
+    }
+  
+    .txt_p2_1{
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 1.7px;
+      line-height: 35px;
+      margin-left: 3vw;
+    }
+
+    .video-3 {
+      height: 300px;
+    }
+  
+    .title2 {
+      text-align: left;
+      font-size: 60px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-left: 5.5vw;
+      margin-top: 5vw;
+      width: 76%;
+    }
+
+    .para-2 {
+      letter-spacing: 1px;
+      color: white;
+      width: 50%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: 17px;
+      line-height: 2.3em;
+      margin-left: 7vw;
+      top: 5vw;
+      position: relative;
+    }
+
+    .end {
+      margin-top: -44vw!important;
+    }
+  
+    .footer-page {
+      height: 60px;
+      display: flex;
+      justify-content: end;
+      margin-right: 3.2%;
+    }
+  
+    .logos {
+      margin: 0 10px;
+      height: 40px;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 35px;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 35px;
+    }
+  }
+  
+  @media(min-width: 1281px) {
+  
+    #menu {
+      position: fixed;
+      left: 20px;
+      top: 50px;
+    }
+  
+    .number {
+      scale: 170%;
+      position: absolute;
+      right: 90px;
+      top: 70px;
+    }
+  
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .content {
+      height: 30vh!important;
+      margin-top: 125px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .content-faixa {
+      background-color: #20231a;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5vw;
+    }
+  
+    #internal {
+      width: 30%;
+      padding: 0 10px;
+    }
+  
+    .txt_p2_1{
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 1.7px;
+      line-height: 40px;
+      margin-left: 3vw;
+    }
+
+    .video-3 {
+      height: 300px;
+    }
+  
+    .title2 {
+      text-align: left;
+      font-size: 50px;
+      left: -5.3vw;
+      position: relative;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-left: 6vw;
+      margin-top: 2vw;
+    }
+
+    .para-2 {
+      letter-spacing: 2px;
+      color: white;
+      width: 50%;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size:17px;
+      line-height: 2.3em;
+      margin-left: 2vw;
+      margin-top: 2vw;
+    }
+
+    .end {
+      margin-top: -8vw;
+    }
+  
+    .footer-page {
+      height: 60px;
+      display: flex;
+      justify-content: end;
+      margin-right: 3.2%;
+      bottom: -3vw;
+      position: relative;
+    }
+  
+    .logos {
+      margin: 0 10px;
+      height: 40px;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 35px;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 35px;
+    }
+  }
+  
+  /*paisagem*/
+
+  @media(max-height: 540px) and (max-width: 916px) {
+    
+    .part-one {
+      height: 100%;
+      background-color: #333;
+    }
+  
+    .number {
+      padding: 0;
+      color: white;
+      font-size: 7em;
+      font-weight: 900;
+      margin-right: 5px;
+      margin-top: -5px;
+    }
+  
+    #menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 999;
+      color: #ffffff;
+      margin-left: -15px!important;
+      margin-top: 0px!important;
+    }
+  
+    .content {
+      height: 30vh !important;
+      margin-top: 40vw!important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .content-faixa {
+      margin-top: 200px!important;
+      background-color: #20231a;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #internal {
+      width: 50%;
+      padding: 0 10px;
+    }
+  
+    .video-3 {
+      height: 190px !important;
+    }
+  
+    .title2 {
+      text-align: left;
+      font-size: 35px!important;
+      line-height: 50px;
+      color: white;
+      left: -2.5vw;
+      position: relative;
+      width: 74%;
+    }
+
+    .txt_p2_1{
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 16px;
+      letter-spacing: 1.7px;
+      line-height: 25px;
+      margin-left: 3vw;
+    }
+
+    .end {
+      margin: 0 !important;
+      top: -5vw;
+      position: relative;
+      margin-left: 6vw;
+    }
+  
+    .para-2 {
+      letter-spacing: 1px;
+      color: white;
+      width: 80%;
+      font-size: 15px;
+      margin-left: 14vw!important;
+    }
+  
+    .footer-page {
+      margin-top: 40px;
+      height: 60px;
+      display: flex;
+      justify-content: end;
+      margin-right: 3.2%;
+      top: 25vw!important;      
+      position: relative;
+    }
+  
+    .logos {
+      margin: 0 10px;
+      height: 25px;
+    }
+  
+    .logos-whatsapp {
+      margin: 0 10px;
+      height: 22px;
+    }
+  
+    .logos-youtube {
+      margin: 0 10px;
+      height: 22px;
+    }
+  }
+  
+  /*paisagem*/
+
+  /*Header*/
+  
+  #menu.button i {
+    top: 0;
+    margin-top: -23px;
+    transition: all .6s;
+  }
+  
+  #menu.button i:first-child {
+    margin-top: 0px;
+  }
+  
+  #menu.button.active i {
+    transform: rotate(40deg) skewX(0deg);
+    color: white;
+    margin-top: -17px;
+  }
+  
+  #menu.button.active i:first-child {
+    transform: rotate(-40deg) skewX(0deg);
+    margin-top: 0px;
+  }
+  
+  .button-down div {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .number {
+    padding: 0;
+    color: white;
+    font-size: 8em;
+    font-weight: 900;
+    font-family: Montserrat, sans-serif;
+  }
+
+  #menu {
+    display: run-in;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 999;
+    color: #ffffff;
+    margin-left: 50px!important;
+    margin-top: 10px!important;
+  }
+
+  .content {
+    height: 0vh;
+    margin-top: 23vw;
+    width: 85%;
+    left:8%;
+    position: relative;
+  }
+
+  .content-faixa {
+    margin-top: 15vw;
+  }
+
+  .end {
+    margin-top: -20vw;
+  }
+
+  .navbar{
+    height: 90px !important;
+  }
+
+  .footer-page {
+    bottom: 2vw;
+  }
+
+  /*Header*/
